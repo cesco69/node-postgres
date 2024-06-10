@@ -105,7 +105,6 @@ class Client extends EventEmitter {
     }
     this._connecting = true
 
-    this.connectionTimeoutHandle
     if (this._connectionTimeoutMillis > 0) {
       this.connectionTimeoutHandle = setTimeout(() => {
         con._ending = true
